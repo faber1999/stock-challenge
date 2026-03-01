@@ -1,0 +1,33 @@
+@baseUrl = http://localhost:8080
+
+### Health
+GET {{baseUrl}}/health
+
+### DB time
+GET {{baseUrl}}/db-time
+
+### Sync stocks from external API
+POST {{baseUrl}}/stocks/sync?limit=10
+
+### Sync stocks from external API (JSON body)
+POST {{baseUrl}}/stocks/sync
+Content-Type: application/json
+
+{
+  "limit": 10
+}
+
+### List stocks
+GET {{baseUrl}}/stocks?limit=20&offset=0&sort_by=ticker&order=asc
+
+### Search stocks
+GET {{baseUrl}}/stocks?q=apple&action=buy&limit=20&offset=0
+
+### Stock detail
+GET {{baseUrl}}/stocks/AAPL
+
+### Recommendations
+GET {{baseUrl}}/stocks/recommendations?limit=5
+
+### Swagger OpenAPI JSON
+GET {{baseUrl}}/swagger/doc.json

@@ -1,0 +1,32 @@
+# General
+*.log
+*.tmp
+.DS_Store
+.envrc
+
+# Dependencies and build artifacts
+**/node_modules/
+**/dist/
+**/dist-ssr/
+
+# Env files
+.env
+.env.*
+!.env.example
+
+# Terraform
+**/.terraform/*
+*.tfstate
+*.tfstate.*
+*.tfvars
+!*.tfvars.example
+crash.log
+crash.*.log
+override.tf
+override.tf.json
+*_override.tf
+*_override.tf.json
+
+# IDE
+.vscode/
+.idea/

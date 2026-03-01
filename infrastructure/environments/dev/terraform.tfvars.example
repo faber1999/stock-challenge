@@ -1,0 +1,18 @@
+aws_region               = "us-east-1"
+name_prefix              = "stock-challenge-dev"
+backend_container_image  = "123456789012.dkr.ecr.us-east-1.amazonaws.com/stock-challenge-backend:latest"
+database_url_secret_arn  = "arn:aws:secretsmanager:us-east-1:123456789012:secret:stock-challenge/dev/database-url"
+stocks_api_token_secret_arn = ""
+
+# Set this to your CloudFront domain or custom frontend domain once available.
+cors_allowed_origins = "*"
+
+frontend_bucket_force_destroy = false
+frontend_aliases              = []
+frontend_acm_certificate_arn  = ""
+
+tags = {
+  Project     = "stock-challenge"
+  Environment = "dev"
+  Owner       = "your-name"
+}

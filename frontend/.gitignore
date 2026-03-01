@@ -1,0 +1,12 @@
+# Frontend-specific local files
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+*.local
+
+# Keep workspace recommendations
+.vscode/*
+!.vscode/extensions.json
